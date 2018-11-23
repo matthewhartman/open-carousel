@@ -42,8 +42,6 @@ const OpenCarousel = ({ items, speed, breakPointWidth, itemWidth, itemHeight }) 
         @media screen and (min-width: ${breakPointWidth}px) {
           .open-carousel {
             overflow: auto;
-          }
-          .open-carousel-container {
             height: auto;
           }
           .open-carousel-container {
