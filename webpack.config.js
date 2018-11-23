@@ -1,4 +1,5 @@
 /*** webpack.config.js ***/
+var webpack = require("webpack");
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
@@ -10,7 +11,7 @@ module.exports = {
   output: {
     path: path.resolve(__dirname,'dist'),
     filename: 'index.js',
-    libraryTarget: 'commonjs2'
+    libraryTarget: 'commonjs-module'
   },
   module: {
     rules: [
