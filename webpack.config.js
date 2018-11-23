@@ -1,5 +1,4 @@
 /*** webpack.config.js ***/
-var webpack = require("webpack");
 const path = require('path');
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 const htmlWebpackPlugin = new HtmlWebpackPlugin({
@@ -31,6 +30,7 @@ module.exports = {
     extensions: [".js", ".jsx"]
   },
   devServer: {
+    publicPath: '/dist',
     port: 3001
   }
 };

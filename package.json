@@ -4,7 +4,6 @@
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --mode development",
-    "transpile": "babel src -d dist --copy-files",
     "dist": "./node_modules/webpack/bin/webpack.js src --out-dir dist --copy-files",
     "test": "jest"
   },
