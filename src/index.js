@@ -40,6 +40,9 @@ const OpenCarousel = ({ items, speed, breakPointWidth, itemWidth, itemHeight }) 
           animation: marquee ${speed} linear infinite;
         }
         @media screen and (min-width: ${breakPointWidth}px) {
+          .open-carousel {
+            overflow: auto;
+          }
           .open-carousel-container {
             height: auto;
           }

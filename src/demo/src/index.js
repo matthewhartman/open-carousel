@@ -5,7 +5,7 @@ import items from '../data/items'
 
 const App = () => (
   <OpenCarousel
-    speed='5s'
+    speed='10s'
     items={items}
     breakPointWidth={720}
     itemWidth={200}
