@@ -1,9 +1,9 @@
 {
   "name": "open-carousel",
-  "version": "0.0.3",
+  "version": "0.0.4",
   "main": "dist/index.js",
   "scripts": {
-    "start": "webpack-dev-server --mode development",
+    "start": "webpack-dev-server --config webpack.config.dev.js --mode development",
     "dist": "./node_modules/webpack/bin/webpack.js src --out-dir dist --copy-files",
     "test": "jest"
   },
