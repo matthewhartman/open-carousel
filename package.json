@@ -1,6 +1,8 @@
 {
   "name": "open-carousel",
+  "description": "A simple carousel for showcasing clients.",
   "version": "0.0.4",
+  "author": "Matthew Hartman",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --mode development",
@@ -35,5 +37,12 @@
     "not ie <= 11",
     "not op_mini all"
   ],
-  "license": "MIT"
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/matthewhartman/open-carousel.git"
+  },
+  "bugs": {
+    "url": "https://github.com/matthewhartman/open-carousel/issues"
+  }
 }
