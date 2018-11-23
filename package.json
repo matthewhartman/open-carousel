@@ -27,6 +27,9 @@
     "webpack-cli": "^3.1.2",
     "webpack-dev-server": "^3.1.10"
   },
+  "dependencies": {
+    "styled-jsx": "^3.1.2"
+  },
   "browserslist": [
     ">0.2%",
     "not dead",

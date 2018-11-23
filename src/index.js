@@ -23,7 +23,7 @@ const OpenCarousel = ({ items, speed, breakPointWidth, itemWidth, itemHeight }) 
           />
         }) }
       </div>
-      <style jsx='true'>{`
+      <style jsx>{`
         @keyframes marquee {
           0% { transform: translate(0, 0); }
           100% { transform: translate(-${totalWidthOfItems}px, 0); }
