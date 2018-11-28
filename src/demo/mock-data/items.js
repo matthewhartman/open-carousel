@@ -15,11 +15,6 @@ const items = [
     url: '#'
   },
   {
-    name: 'Atlassian',
-    logo: 'https://rawgit.com/matthewhartman/open-cdn/master/atlassian.svg',
-    url: '#'
-  },
-  {
     name: 'Tumblr',
     logo: 'https://rawgit.com/matthewhartman/open-cdn/master/tumblr.svg',
     url: '#'

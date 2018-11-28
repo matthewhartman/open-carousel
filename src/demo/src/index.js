@@ -1,13 +1,13 @@
 import React from 'react'
 import ReactDOM from 'react-dom' 
 import OpenCarousel from '../../../src/'
-import items from '../data/items'
+import items from '../mock-data/items'
 
 const App = () => (
   <OpenCarousel
-    speed='10s'
+    speed={10}
     items={items}
-    breakPointWidth={720}
+    breakpointWidth={720}
     itemWidth={200}
     itemHeight={60}
   />

@@ -3,7 +3,7 @@ import randomiseArray from './utils/randomiseArray'
 import flattenArray from './utils/flattenArray'
 import OpenCarouselItem from './components/OpenCarouselItem'
 
-const OpenCarousel = ({ items, speed, breakPointWidth, itemWidth, itemHeight }) => {
+const OpenCarousel = ({ items, speed, breakpointWidth, itemWidth, itemHeight }) => {
   const totalNumberOfItems = items && items.length
   const totalWidthOfItems = (totalNumberOfItems * itemWidth)
   const randomItems = randomiseArray(items)
@@ -17,6 +17,7 @@ const OpenCarousel = ({ items, speed, breakPointWidth, itemWidth, itemHeight }) 
           return <OpenCarouselItem
             key={`carousel-item-${index}`}
             width={itemWidth}
+            height={itemHeight}
             name={name}
             logo={logo}
             url={url}
@@ -37,9 +38,9 @@ const OpenCarousel = ({ items, speed, breakPointWidth, itemWidth, itemHeight }) 
         .open-carousel-container {
           position: absolute;
           display: flex;
-          animation: marquee ${speed} linear infinite;
+          animation: marquee ${speed}s linear infinite;
         }
-        @media screen and (min-width: ${breakPointWidth}px) {
+        @media screen and (min-width: ${breakpointWidth}px) {
           .open-carousel {
             overflow: auto;
             height: auto;
@@ -50,8 +51,10 @@ const OpenCarousel = ({ items, speed, breakPointWidth, itemWidth, itemHeight }) 
             position: relative;
             justify-content: center;
           }
-          .open-carousel-container a { margin: 5px; }
-          .open-carousel-container a:nth-of-type(1n+${totalNumberOfItems + 1}) {
+          .open-carousel-item {
+            margin: 15px;
+          }
+          .open-carousel-item:nth-of-type(1n+${totalNumberOfItems + 1}) {
             display: none;
           }
         }
