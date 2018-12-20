@@ -16,11 +16,12 @@ When on small screen sizes (breakpoint can be set via prop), the carousel animat
 
 ```
   <Carousel
-    speed='15'            // speed of moving carousel in seconds
-    items={items}         // an array of item objects {name: 'test', logo: 'logo.svg', url: '#'}
-    breakpointWidth={720} // the breakpoint which the carousel stops and logos stack
-    itemWidth={200}       // the width of each carousel item
-    itemHeight={60}       // the height of each carousel item
+    speed='15'                  // speed of moving carousel in seconds
+    items={items}               // an array of item objects {name: 'test', logo: 'logo.svg', url: '#'}
+    breakpointWidth={720}       // the breakpoint which the carousel stops and logos stack
+    itemWidth={200}             // the width of each carousel item
+    itemHeight={60}             // the height of each carousel item
+    fallbackMessage='No logos'  // the default message when items are empty
   />
 ```
 

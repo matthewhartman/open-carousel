@@ -10,6 +10,7 @@ const App = () => (
     breakpointWidth={720}
     itemWidth={200}
     itemHeight={60}
+    fallbackMessage='There are currently no logos provided.'
   />
 )
 

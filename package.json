@@ -1,12 +1,13 @@
 {
   "name": "open-carousel",
   "description": "A simple carousel for showcasing clients.",
-  "version": "0.0.7",
+  "version": "0.0.8",
   "author": "Matthew Hartman",
   "main": "dist/index.js",
   "scripts": {
     "start": "webpack-dev-server --config webpack.config.dev.js --mode development",
     "dist": "webpack --mode production",
+    "build": "webpack --mode production",
     "test": "jest"
   },
   "devDependencies": {
